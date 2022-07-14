@@ -5,25 +5,31 @@ const p = document.querySelector('p');
 
 addItemBtn.addEventListener('click', () => {
     let inputValue = input.value;
-    if (inputValue !== '') {
+    if (inputValue === '') {
+        p.innerHTML = 'Please type something...'
+    } else {
+
         let li = document.createElement('li');
+
         let input = document.createElement('input');
-        input.className = "li-input";
+        input.classList.add("li-input");
         input.value = inputValue;
+
         let removeBtn = document.createElement('button');
-        removeBtn.className = "removeBtn";
+        removeBtn.classList.add("removeBtn");
         removeBtn.textContent = "Remove";
+
         li.appendChild(input);
         li.appendChild(removeBtn);
         ulList.appendChild(li);
+
         p.innerHTML = '';
 
-        removeBtn = document.querySelector('.removeBtn');
+
         removeBtn.addEventListener('click', () => {
             ulList.removeChild(li);
         })
-    } else {
-        p.innerHTML = 'Please type something...'
     }
+    input.value = '';
 });
 
