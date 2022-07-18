@@ -1,5 +1,5 @@
 body {
-    background-color: #fefae0;
+    background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
 }
 
 h1 {
@@ -32,7 +32,8 @@ p {
 
 #input {
     width: 100%;
-    max-width: 280px;
+    max-width: 500px;
+    margin-right: 10px;
     padding: 10px 15px;
     border: none;
     outline: none;
@@ -54,7 +55,6 @@ p {
     background-color: #e9edc9;
     border-radius: 16px 0px 16px 0px;
     border-bottom: 3px solid #DF8E00;
-    color: #d4a373;
     font-size: 20px;
     font-weight: 300;
 }
@@ -64,7 +64,7 @@ p {
     padding: 10px 15px;
     border: none;
     outline: none;
-    background-color: #e9edc9;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
     border-radius: 0px 16px 0px 16px;
     border-bottom: 3px solid #DF8E00;
     color: #313131;
@@ -74,17 +74,27 @@ p {
 }
 
 .removeBtn {
-    max-width: 120px;
     padding: 10px 15px;
     margin: 10px;
     text-align: center;
     border: none;
-    outline: none;
-    background-color: #faedcd;
+    background: linear-gradient(to right, #eb3349, #f45c43);
     border-radius: 16px 16px 16px 16px;
     border-bottom: 3px solid #DF8E00;
     color: #313131;
     font-size: 20px;
     font-weight: 700;
-    transition: 0.2s ease-out;
+}
+
+.doneBtn {
+    padding: 9px 14px;
+    margin: 10px 5px;
+    text-align: center;
+    border: none;
+    background: linear-gradient(to right, #3df79a, #62a5e9);
+    border-radius: 16px 16px 16px 16px;
+    border-bottom: 3px solid #DF8E00;
+    color: #313131;
+    font-size: 20px;
+    font-weight: 700;
 }

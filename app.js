@@ -17,10 +17,15 @@ addItemBtn.addEventListener('click', () => {
 
         let removeBtn = document.createElement('button');
         removeBtn.classList.add("removeBtn");
-        removeBtn.textContent = "Remove";
+        removeBtn.textContent = "X";
+
+        let doneBtn = document.createElement('button');
+        doneBtn.classList.add("doneBtn");
+        doneBtn.textContent = "✓";
 
         li.appendChild(input);
         li.appendChild(removeBtn);
+        li.appendChild(doneBtn)
         ulList.appendChild(li);
 
         p.innerHTML = '';
@@ -29,6 +34,14 @@ addItemBtn.addEventListener('click', () => {
         removeBtn.addEventListener('click', () => {
             ulList.removeChild(li);
         })
+
+        doneBtn.addEventListener('click', () => {
+            input.style.textDecoration = 'line-through';
+        })
+
+        // if (ulList.innerHTML = '') {
+        //     p.innerHTML = '';
+        // }
     }
     input.value = '';
 });
