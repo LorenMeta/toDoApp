@@ -37,6 +37,7 @@ addItemBtn.addEventListener('click', () => {
 
         doneBtn.addEventListener('click', () => {
             input.style.textDecoration = 'line-through';
+            input.style.textDecorationColor = 'red'
         })
 
         // if (ulList.innerHTML = '') {
